@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    display: flex;      
+    height: 100%;        
+    flex-direction: column;
+}
+
+
+/*  */
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav{
+    margin: auto;
+    max-width: 80rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divLogo{
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    font-size: 1.05rem;
+}
+
+.divLogo > div{
+    display: flex;
+    column-gap: 1.5rem
+}
+
+.divLogo > div a{
+    display: inline-block;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    color: rgb(51 65 85);
+    border-radius: 0.5rem; /* 8px */
+    text-decoration: none;
+    
+}
+
+.divLogo > div a:hover{
+    background-color:  rgb(241 245 249);
+    color: rgb(15 23 42);
+    
+}
+
+.divLogo1{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-size: 1.05rem;
+}
+
+.divLogo1 > div .a1{
+    display: inline-block;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    color: rgb(51 65 85);
+    border-radius: 0.5rem; /* 8px */
+    text-decoration: none;
+}
+
+.divLogo1 > div .a1:hover{
+    background-color:  rgb(241 245 249);
+    color: rgb(15 23 42);
+    
+}
+
+.divLogo1 > div .a2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px; 
+    padding: 0.8rem 1rem; 
+    font-size: 1.05rem  ; 
+    background-color: #2563eb; 
+    color: white; 
+    text-decoration: none;
+}
+
+.divLogo1 > div .a2:hover{
+    color: #f1f5f9; 
+    background-color: #3b82f6;
+}
+/*  */
+
+/*  */
+
+headLine{
+    margin: auto;
+    padding: 5rem 1rem 4rem 1rem ; 
+    text-align: center;
+}
+
+headLine > h1{
+    margin: auto;
+    padding-top: 7rem;
+    font-size: 4rem; 
+    color: #0f172a;
+}
+
+headLine > div{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+headLine > div .a1{
+    color: white;
+    background-color: #0f172a;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 9999px;
+}
+
+headLine > div .a1:hover{
+    color: rgb(241 245 249);
+    background-color: rgb(55 65 81);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+}
+
+headLine > div .a2{
+    color: rgb(51 65 85);
+    background-color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 9999px;
+    border: 0.05rem rgb(231, 228, 228) solid;
+}
+
+headLine > div .a2:hover{
+    color: rgb(24 24 27);
+    border: 0.05rem rgb(194, 191, 191) solid;
+}
+
+headLine > .cop{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem;
+}
+
+headLine > .cop div > img{
+    padding: 0rem 1.5rem;
+}
+
+
+
+
+
+/*  */

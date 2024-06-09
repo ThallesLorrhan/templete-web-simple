@@ -157,7 +157,108 @@ headLine > .cop div > img{
     padding: 0rem 1.5rem;
 }
 
+/*  */
 
+section{
+    padding: 5rem 0rem 7rem 0rem;
+    background-image: url('./img/background-section01.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.text{
+    margin: auto;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem; 
+    color: white;
+}
+
+.headline-section {
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    color: white;
+    font-size: 0.8rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card1{
+    height: 8rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card2{
+    height: 8rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.card2:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.5rem);
+}
+
+
+.img > img{
+    border-radius: 0.75rem  ;
+}
+/*  */
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+footer{
+    display: block;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+}
+
+.top{
+    align-items: center;
+    padding: 4rem 0rem 4rem 0rem;
+}
+
+.divLogo-footer > div{
+    display: flex;
+    column-gap: 1.5rem
+}
+
+.divLogo-footer > div a{
+    display: inline-block;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    color: rgb(51 65 85);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    
+}
+
+.divLogo-footer > div a:hover{
+    background-color:  rgb(241 245 249);
+    color: rgb(15 23 42);
+}
+
+.bottom{
+    border-top: 1px solid rgba(67, 76, 94, 0.1);
+}
 
 
 

@@ -1,0 +1,14 @@
+@media screen and (max-width:600px) {
+    .divLogo > div{
+        display: none;
+    }
+
+    .divLogo1{
+        display: none;
+    }
+
+    .headline-section{
+        display: block;
+    }
+
+}

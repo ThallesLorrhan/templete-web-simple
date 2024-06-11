@@ -7,6 +7,12 @@
         display: none;
     }
 
+    headLine > h1{
+        
+        font-size: 3rem; 
+        
+    }
+
     .headline-section{
         display: block;
     }
@@ -17,6 +23,15 @@
     }
 
     .price > div .cards{
+        display: block;
+        
+    }
+
+    .coments > .content{
+        max-width: 90%;
+    }
+
+    .coments > .content .cards{
         display: block;
         
     }

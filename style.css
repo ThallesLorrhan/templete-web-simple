@@ -150,7 +150,7 @@ headLine > div .a2:hover{
 headLine > .cop{
     display: flex;
     flex-direction: column;
-    margin: 10rem;
+    margin-bottom: 4rem;
 }
 
 headLine > .cop div > img{
@@ -207,8 +207,66 @@ section{
 
 
 .img > img{
-    border-radius: 0.75rem  ;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.75rem;;
 }
+
+/*  */
+.coments{
+    margin: auto;
+}
+
+.coments > .text{
+    margin: auto;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1rem;
+    color: #0f172a;
+}
+
+.coments > .content{
+    margin: auto;
+    max-width: 60%;
+    max-width: 60%;
+}
+
+.coments > .content .cards{
+    display: flex;
+    font-size: 1rem;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.coments > .content  .cards .card{
+    max-width: 100%;
+    margin: 1rem 0rem;
+    color: #0f172a;
+    border-radius: 1rem; 
+    background-color: white;
+    padding: 1.5rem; 
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1), 0 1px 2px rgba(15, 23, 42, 0.1); 
+}
+
+.coments > .content  .cards .card div{
+    display: flex;
+    border-top: 1px solid rgba(67, 76, 94, 0.1);
+}
+
+.coments > .content  .cards .card div .name{
+    display: block;
+    font-size: 0.8rem;
+}
+
+.coments > .content  .cards .card div .img{
+    margin-left: auto;
+    align-items: center;
+    width: 70px;
+
+}
+
+
 
 /*  */
 
@@ -266,15 +324,7 @@ section{
     margin-right: 0.8rem;
 }
 
-
-
-
-
-
-
-
-
-
+/*  */
 
 /*  */
 

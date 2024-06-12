@@ -7,6 +7,10 @@
         display: none;
     }
 
+    .menu{
+        display: flex;
+    }
+
     headLine > h1{
         
         font-size: 3rem; 
@@ -15,6 +19,14 @@
 
     .headline-section{
         display: block;
+    }
+
+    .features > .card{
+        display: block;
+    }
+
+    .features > .img div{
+        padding: 0.1rem 0.1rem ;
     }
 
     .faqs > div .content{

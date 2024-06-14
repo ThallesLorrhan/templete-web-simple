@@ -212,9 +212,13 @@ section{
 .text{
     margin: auto;
     text-align: center;
-    padding-top: 3rem;
+    padding: 3rem;
     font-size: 2rem; 
     color: white;
+}
+
+.text p{
+    font-size: 1rem;
 }
 
 .headline-section {
@@ -248,8 +252,11 @@ section{
     transform: scale(1.5rem);
 }
 
-
-.img > img{
+.headline-section > .img{
+    display: flex;
+    align-items: center;
+}
+.headline-section > .img  img{
     width: 100%;
     height: auto;
     display: block;
@@ -307,18 +314,17 @@ section{
 }
 
 .features > .img div{
-    padding: 1rem 2rem ;
+    padding: 1rem 1rem ;
     border-radius: 2rem;
+    height: 600px;
     background-color: #f1f5f9;
-
 }
 
 .features > .img div img{
-    padding: 1rem ;
     border-radius: 2rem;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    margin: 0rem 0rem;
 }
 
 

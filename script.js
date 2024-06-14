@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var x = document.getElementById("show01");
         // Verifica se o estilo de exibição atual é "block"
         // usando x.style.display e window.getComputedStyle(x).display
-        if (x.style.display === "block" || window.getComputedStyle(x).display === "block") {
+        if (x.style.display === "block") {
             // Se o elemento estiver visível, oculta-o (altera para "none")
             x.style.display = "none";
         } else {

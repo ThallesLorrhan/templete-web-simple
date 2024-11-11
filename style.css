@@ -9,6 +9,7 @@ body{
     height: 100%;        
     flex-direction: column;
     background-color: white;
+    font-size: 15px;
 }
 
 
@@ -58,43 +59,53 @@ nav{
     
 }
 
-.divLogo1{
+.divLogo1 {
     display: flex;
     align-items: center;
     gap: 1.25rem;
     font-size: 1.05rem;
 }
 
-.divLogo1 > div .a1{
-    display: inline-block;
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    color: rgb(51 65 85);
-    border-radius: 0.5rem; /* 8px */
-    text-decoration: none;
-}
-
-.divLogo1 > div .a1:hover{
-    background-color:  rgb(241 245 249);
-    color: rgb(15 23 42);
-    
-}
-
-.divLogo1 > div .a2{
-    display: flex;
+.divLogo1 > div button.a1, .divLogo1 > div button.a2 {
+    display: inline-flex; /* Usando inline-flex para os botões ficarem alinhados */
     align-items: center;
     justify-content: center;
-    border-radius: 9999px; 
-    padding: 0.8rem 1rem; 
-    font-size: 1.05rem  ; 
-    background-color: #2563eb; 
-    color: white; 
+    padding: 0.25rem 0.5rem;
+    border: none;
+    background: none;
+    font-size: 1.05rem;
+    cursor: pointer;
     text-decoration: none;
+    border-radius: 0.5rem; /* Mesmo border-radius que você usava */
 }
 
-.divLogo1 > div .a2:hover{
-    color: #f1f5f9; 
+.divLogo1 > div button.a1 {
+    color: rgb(51, 65, 85);
+}
+
+.divLogo1 > div button.a1:hover {
+    background-color: rgb(241, 245, 249);
+    color: rgb(15, 23, 42);
+}
+
+.divLogo1 > div button.a2 {
+    border-radius: 9999px; /* Botão arredondado */
+    padding: 0.8rem 1rem;
+    background-color: #2563eb;
+    color: white;
+}
+
+.divLogo1 > div button.a2:hover {
+    color: #f1f5f9;
     background-color: #3b82f6;
 }
+
+/* Foco no botão para acessibilidade visual */
+.divLogo1 > div button:focus {
+    outline: none; /* Remove o outline padrão */
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5); /* Adiciona um foco personalizado */
+}
+
 
 .menu{
     display: none;
@@ -544,6 +555,270 @@ footer > div{
 .bottom{
     border-top: 1px solid rgba(67, 76, 94, 0.1);
 }
+
+
+/*  */
+
+
+.botao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#acessibilidade-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#acessibilidade-btn:hover {
+    background-color: #007bff;
+}
+
+#acessibilidade-btn i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content > button {
+    padding: 12px 20px;
+    margin: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff; /* Azul */
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+.modal-content > button:hover {
+    background-color: #0056b3; /* Tom mais escuro no hover */
+    transform: translateY(-2px); /* Efeito de elevação no hover */
+}
+
+.modal-content > button:active {
+    transform: translateY(1px); /* Leve recuo no clique */
+}
+
+.close {
+    display: flex;
+    justify-content: end;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*  */
+
+
+.modal2 {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.form-card {
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+}
+
+.checkbox-label {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.forgot-password {
+  font-size: 0.875rem;
+  color: #4c51bf;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.submit-button {
+  background-color: #4c51bf;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #434190;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.divider-text {
+  background-color: #fff;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.social-login {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.social-button.google {
+  background-color: #fff;
+  color: #ea4335;
+}
+
+.social-button.github {
+  background-color: #fff;
+  color: #333;
+}
+
+.social-icon {
+  width: 1.5rem;
+  height: auto;
+}
+
+.sign-up-prompt {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 1.5rem;
+}
+
+.sign-up-link {
+  color: #4c51bf;
+  text-decoration: none;
+}
+
+.sign-up-link:hover {
+  text-decoration: underline;
+}
+
 
 
 /*  */

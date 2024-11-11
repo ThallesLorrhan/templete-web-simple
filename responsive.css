@@ -49,6 +49,10 @@
         display: block;
         
     }
+
+    .botao > #acessibilidade-btn > img{
+        width: 40px;
+    }
     
 
 }

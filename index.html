@@ -8,6 +8,20 @@
     <title>web</title>
 </head>
 <body>
+    <div class="botao">
+        <button id="acessibilidade-btn" onclick="toggleModal()">
+            <img src="./img/accessibility.png" width="80px"/>
+        </button>
+    </div>
+    <div id="acessibilidade-modal" class="modal">
+        <div class="modal-content">
+                <span class="close" onclick="toggleModal()">&times;</span>
+                <h2>Configurações de Acessibilidade</h2>
+                <button onclick="aumentarFonte()">Aumentar Fonte</button>
+                <button onclick="diminuirFonte()">Diminuir Fonte</button>
+        </div>
+    </div>
+
     <header>
         <div class="nav">
             <nav>
@@ -23,10 +37,10 @@
                 </div>
                 <div class="divLogo1">
                     <div>
-                        <a href="" class="a1">Entrar</a>
+                        <button class="a1" onclick="toggleLog()">Entrar</button>
                     </div>
                     <div>
-                        <a href="" class="a2">Cadastrar</a>
+                        <button class="a2" onclick="toggleSing()">Cadastrar</button>
                     </div>
                 </div>
                 <div class="menu">
@@ -41,8 +55,8 @@
                             <a href="#Depoimentos">Depoimentos</a>
                             <a href="#Preco">Preços</a>
                             <div>
-                                <a href="">Entrar</a>
-                                <a style="color: #2563eb;" href="">Cadastrar</a>
+                                <a href="javascript:void(0);" onclick="toggleLog()">Entrar</a>
+                                <a style="color: #2563eb;"href="javascript:void(0);" onclick="toggleSing()">Cadastrar</a>
                             </div>
                         </div>
                     </div>
@@ -381,6 +395,123 @@
             
         </div>
     </footer>
+
+    <div id="log" class="modal2">
+        <div class="log-content">
+            <div class="login-container">
+                <div class="form-container">
+                  <div class="form-card">
+                    <span class="close" width="100px" onclick="toggleLog()">&times;</span>
+                    <div class="logo-container">
+                        <img class="logo" src="./img/logo.png">
+                        <h2 class="title">Acesse sua conta</h2>
+                      </div>
+                    <form class="login-form" action="#" method="POST">
+                      <div class="input-group">
+                        <label for="email" class="label">Email </label>
+                        <input id="email" name="email" type="email" autocomplete="email" required class="input">
+                      </div>
+              
+                      <div class="input-group">
+                        <label for="password" class="label">Senha</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required class="input">
+                      </div>
+              
+                      <div class="remember-me">
+                        <input id="remember-me" name="remember-me" type="checkbox" class="checkbox">
+                        <label for="remember-me" class="checkbox-label">Relembrar</label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                      </div>
+              
+                      <button type="submit" class="submit-button">log in</button>
+                    </form>
+              
+                    <div class="divider">
+                      <span class="divider-text">Acesse com:</span>
+                    </div>
+              
+                    <div class="social-login">
+                      <a href="#" class="social-button google">
+                        <img src="./img/google.png" width="25px"/>
+                        <span>Google</span>
+                      </a>
+              
+                      <a href="#" class="social-button github">
+                        <img src="./img/github.png" width="25px"/>
+                        <span>GitHub</span>
+                      </a>
+                    </div>
+
+                    <p class="sign-up-prompt">
+                        Não é membro? <a href="#" class="sign-up-link">Clique aqui</a>
+                      </p>
+                  </div>
+              
+                </div>
+              </div>
+              
+        </div>
+    </div>
+
+    <div id="sing"  class="modal2">
+        <div class="log-content">
+            <div class="login-container">
+                <div class="form-container">
+                  <div class="form-card">
+                    <span class="close" width="100px" onclick="toggleSing()">&times;</span>
+                    <div class="logo-container">
+                        <img class="logo" src="./img/logo.png">
+                        <h2 class="title">Faça sua conta</h2>
+                      </div>
+                    <form class="login-form" action="#" method="POST">
+                      <div class="input-group">
+                        <label for="email" class="label">Email </label>
+                        <input id="email" name="email" type="email" autocomplete="email" required class="input">
+                      </div>
+              
+                      <div class="input-group">
+                        <label for="password" class="label">Senha</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required class="input">
+                      </div>
+
+                      <div class="input-group">
+                        <label for="password" class="label"> Confirme sua Senha</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required class="input">
+                      </div>
+              
+                      <div class="remember-me">
+                        <input id="remember-me" name="remember-me" type="checkbox" class="checkbox">
+                        <label for="remember-me" class="checkbox-label">Relembrar</label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                      </div>
+              
+                      <button type="submit" class="submit-button">Sing in</button>
+                    </form>
+              
+                    <div class="divider">
+                      <span class="divider-text">Faça sua conta com:</span>
+                    </div>
+              
+                    <div class="social-login">
+                      <a href="#" class="social-button google">
+                        <img src="./img/google.png" width="25px"/>
+                        <span>Google</span>
+                      </a>
+              
+                      <a href="#" class="social-button github">
+                        <img src="./img/github.png" width="25px"/>
+                        <span>GitHub</span>
+                      </a>
+                    </div>
+
+                  </div>
+              
+                </div>
+              </div>
+              
+        </div>
+   </div>
+
     <script src="./script.js"></script>
 </body>
 </html>

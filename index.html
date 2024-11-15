@@ -125,44 +125,60 @@
                 <h1>Estrutura do Curso.</h1>
                 <p>Não emporta o quando você sabe <br>nosso curso é para você.</p>
             </div>
-            <div class="card">
-                <div class="cards">
-                    <div>
-                        <div style="background-color: #2563eb;">
-                            <img src="./img/icon-01.png" alt="">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div>
+                            <img src="./img/python.png" alt="">
                         </div>
-                        <p style="color: #2563eb;">Introdução à Programação</p>
+                        <p>Introdução à Programação</p>
+                        <span class="accordion-toggle">+</span>
                     </div>
-                    <div>
+                    <div class="accordion-content">
                         <p class="p1">Fundamentos Essenciais para Iniciantes</p>
-                        <p>Nesta primeira parte do curso, você será introduzido aos<br> conceitos básicos da programação. Aprenderá sobre<br> variáveis, estruturas de controle, funções e tipos<br> de dados. Este módulo é projetado para construir<br> uma base sólida, essencial para avançar para <br>tópicos mais complexos. Não é necessário <br>nenhum conhecimento prévio em programação,<br> apenas vontade de aprender e explorar.</p>
+                        <p>
+                            Nesta primeira parte do curso, você será introduzido aos conceitos básicos da programação. Aprenderá sobre variáveis, 
+                            estruturas de controle, funções e tipos de dados. Este módulo é projetado para construir uma base sólida, essencial para avançar para 
+                            tópicos mais complexos. Não é necessário nenhum conhecimento prévio em programação, apenas vontade de aprender e explorar.
+                        </p>
                     </div>
                 </div>
-                <div class="cards">
-                    <div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
                         <div>
-                            <img src="./img/icon-01.png" alt="" width="100px">
+                            <img src="./img/js.png" alt="" width="100px">
                         </div>
                         <p>Desenvolvimento Web</p>
+                        <span class="accordion-toggle">+</span>
                     </div>
-                    <div>
+                    <div class="accordion-content">
                         <p class="p1">Criação de Websites e Aplicações Interativas</p>
-                        <p>Neste módulo, você mergulhará no desenvolvimento web,<br> aprendendo a construir websites e aplicações <br>interativas. Cobrirá HTML, CSS e JavaScript, além <br>de frameworks populares como React e Bootstrap.<br> Você criará projetos práticos que irão do design à <br>implementação, desenvolvendo habilidades que <br>são altamente valorizadas no mercado de trabalho.</p>
+                        <p>
+                            Neste módulo, você mergulhará no desenvolvimento web, aprendendo a construir websites e aplicações interativas. Cobrirá HTML, CSS e JavaScript, 
+                            além de frameworks populares como React e Bootstrap. Você criará projetos práticos que irão do design à implementação, desenvolvendo habilidades 
+                            que são altamente valorizadas no mercado de trabalho.
+                        </p>
                     </div>
                 </div>
-                <div class="cards">
-                    <div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
                         <div>
-                            <img src="./img/icon-01.png" alt="">
+                            <img src="./img/node.png" alt="">
                         </div>
                         <p>Programação Avançada e Banco de Dados</p>
+                        <span class="accordion-toggle">+</span>
                     </div>
-                    <div>
+                    <div class="accordion-content">
                         <h4>Domínio de Técnicas Avançadas e Gerenciamento de Dados</h4>
-                        <p>A parte final do curso foca em técnicas avançadas de <br>programação e gerenciamento de banco de dados. Você <br>aprenderá sobre algoritmos, estruturas de dados,<br> programação orientada a objetos e manipulação <br>de grandes volumes de dados usando SQL. Este <br>módulo também inclui projetos práticos que <br>exigem a aplicação de tudo o que foi aprendido, <br>preparando você para desafios reais do mundo da programação.</p>
+                        <p>
+                            A parte final do curso foca em técnicas avançadas de programação e gerenciamento de banco de dados. Você aprenderá sobre algoritmos, estruturas de dados, 
+                            programação orientada a objetos e manipulação de grandes volumes de dados usando SQL. Este módulo também inclui projetos práticos que exigem a aplicação de 
+                            tudo o que foi aprendido, preparando você para desafios reais do mundo da programação.
+                        </p>
                     </div>
                 </div>
             </div>
+            
             <div class="img">
                 <div>
                     <img src="./img/img-section2.jpg" alt="">
@@ -406,25 +422,56 @@
                         <img class="logo" src="./img/logo.png">
                         <h2 class="title">Acesse sua conta</h2>
                       </div>
-                    <form class="login-form" action="#" method="POST">
-                      <div class="input-group">
-                        <label for="email" class="label">Email </label>
-                        <input id="email" name="email" type="email" autocomplete="email" required class="input">
-                      </div>
-              
-                      <div class="input-group">
-                        <label for="password" class="label">Senha</label>
-                        <input id="password" name="password" type="password" autocomplete="current-password" required class="input">
-                      </div>
-              
-                      <div class="remember-me">
-                        <input id="remember-me" name="remember-me" type="checkbox" class="checkbox">
-                        <label for="remember-me" class="checkbox-label">Relembrar</label>
-                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
-                      </div>
-              
-                      <button type="submit" class="submit-button">log in</button>
-                    </form>
+                      <form class="login-form" id="login-form" action="/index.html" method="POST">
+                        <div class="input-group">
+                          <label for="email" class="label">Email</label>
+                          <input id="email" name="email" type="text" class="input">
+                        </div>
+                      
+                        <div class="input-group">
+                          <label for="password" class="label">Senha</label>
+                          <input id="password" name="password" type="password" class="input">
+                        </div>
+                      
+                        <div class="radio-group">
+                          <p>Selecione seu sexo</p>
+                          <label class="custom-radio">
+                            <input type="radio" name="option" value="opcao1">
+                            <span>Masculino</span>
+                          </label>
+                        
+                          <label class="custom-radio">
+                            <input type="radio" name="option" value="opcao2">
+                            <span>Feminino</span>
+                          </label>
+                        
+                          <label class="custom-radio">
+                            <input type="radio" name="option" value="opcao3">
+                            <span>Prefiro não dizer</span>
+                          </label>
+                        </div>
+                      
+                        <div class="remember-me">
+                          <input id="remember-me" name="remember-me" type="checkbox" class="checkbox">
+                          <label for="remember-me" class="checkbox-label">Relembrar</label>
+                          <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                        </div>
+                      
+                        <div class="custom-select" id="custom-select">
+                          <div class="select-box" id="select-box">
+                            <span>Receber mensagens por:</span>
+                            <div class="arrow" id="arrow"></div>
+                          </div>
+                          <ul class="options-list" id="options-list">
+                            <li data-value="opcao1">WhatsApp</li>
+                            <li data-value="opcao2">E-mail</li>
+                            <li data-value="opcao3">Mensagens</li>
+                          </ul>
+                          <input type="hidden" name="dropdown-value" id="dropdown-value" value="">
+                        </div>
+                      
+                        <button type="submit" class="submit-button">Log in</button>
+                      </form>
               
                     <div class="divider">
                       <span class="divider-text">Acesse com:</span>
@@ -463,30 +510,60 @@
                         <img class="logo" src="./img/logo.png">
                         <h2 class="title">Faça sua conta</h2>
                       </div>
-                    <form class="login-form" action="#" method="POST">
-                      <div class="input-group">
-                        <label for="email" class="label">Email </label>
-                        <input id="email" name="email" type="email" autocomplete="email" required class="input">
-                      </div>
-              
-                      <div class="input-group">
-                        <label for="password" class="label">Senha</label>
-                        <input id="password" name="password" type="password" autocomplete="current-password" required class="input">
-                      </div>
-
-                      <div class="input-group">
-                        <label for="password" class="label"> Confirme sua Senha</label>
-                        <input id="password" name="password" type="password" autocomplete="current-password" required class="input">
-                      </div>
-              
-                      <div class="remember-me">
-                        <input id="remember-me" name="remember-me" type="checkbox" class="checkbox">
-                        <label for="remember-me" class="checkbox-label">Relembrar</label>
-                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
-                      </div>
-              
-                      <button type="submit" class="submit-button">Sing in</button>
-                    </form>
+                      <form class="login-form" id="login-form" action="/index.html" method="POST">
+                        <div class="input-group">
+                          <label for="email" class="label">Email</label>
+                          <input id="email" name="email" type="text" class="input">
+                        </div>
+                      
+                        <div class="input-group">
+                          <label for="password" class="label">Senha</label>
+                          <input id="password" name="password" type="password" class="input">
+                        </div>
+                        <div class="input-group">
+                            <label for="password" class="label">Confirme sua senha</label>
+                            <input id="password" name="password" type="password" class="input">
+                          </div>
+                      
+                        <div class="radio-group">
+                          <p>Selecione seu sexo</p>
+                          <label class="custom-radio">
+                            <input type="radio" name="option" value="opcao1">
+                            <span>Masculino</span>
+                          </label>
+                        
+                          <label class="custom-radio">
+                            <input type="radio" name="option" value="opcao2">
+                            <span>Feminino</span>
+                          </label>
+                        
+                          <label class="custom-radio">
+                            <input type="radio" name="option" value="opcao3">
+                            <span>Prefiro não dizer</span>
+                          </label>
+                        </div>
+                      
+                        <div class="remember-me">
+                          <input id="remember-me" name="remember-me" type="checkbox" class="checkbox">
+                          <label for="remember-me" class="checkbox-label">Relembrar</label>
+                          <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                        </div>
+                      
+                        <div class="custom-select" id="custom-select">
+                          <div class="select-box" id="select-box">
+                            <span>Receber mensagens por:</span>
+                            <div class="arrow" id="arrow"></div>
+                          </div>
+                          <ul class="options-list" id="options-list">
+                            <li data-value="opcao1">WhatsApp</li>
+                            <li data-value="opcao2">E-mail</li>
+                            <li data-value="opcao3">Mensagens</li>
+                          </ul>
+                          <input type="hidden" name="dropdown-value" id="dropdown-value" value="">
+                        </div>
+                      
+                        <button type="submit" class="submit-button">Log in</button>
+                      </form>
               
                     <div class="divider">
                       <span class="divider-text">Faça sua conta com:</span>

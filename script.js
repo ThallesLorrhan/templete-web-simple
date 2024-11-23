@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Anexa a função myFunction ao evento de clique do elemento de imagem
+
     // dentro do link com a classe "img01"
     var imgLink = document.querySelector(".img01 a");
     imgLink.addEventListener("click", myFunction);
@@ -131,6 +131,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Função de validação
     function validateForm(event) {
       let isValid = true;
+
+      //validar nome
+      const nome = nomeField.value.trim();
+      if (nome.length < 3) {  // Verifica se o nome tem menos de 3 caracteres
+        alert("O nome tem que ter mais de 2 letras.");
+        isValid = false;
+      }      
   
       // Validar email (deve ter um "@" e "." após o "@")
       const email = emailField.value.trim();

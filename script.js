@@ -14,26 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-
+    // Anexa a função myFunction ao evento de clique do elemento de imagem
     // dentro do link com a classe "img01"
     var imgLink = document.querySelector(".img01 a");
     imgLink.addEventListener("click", myFunction);
 });
 
-// script.js
-function toggleModal() {
-    const modal = document.getElementById('acessibilidade-modal');
-    modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
-}
-
-// Funções para aumentar e diminuir o tamanho da fonte
-function aumentarFonte() {
-    document.body.style.fontSize = '20px';
-}
-
-function diminuirFonte() {
-    document.body.style.fontSize = '10px';
-}
 
 // Função para abrir/fechar o modal de login
 function toggleLog() {
@@ -41,25 +27,18 @@ function toggleLog() {
     modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
 }
 
-// Função para abrir/fechar o modal de cadastro
-function toggleSing() {
-    const modal = document.getElementById('sing');
-    modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
-}
 /////////////
 
 document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', () => {
         const accordionItem = header.parentElement;
 
-        // Fecha outros itens, se necessário
         document.querySelectorAll('.accordion-item').forEach(item => {
             if (item !== accordionItem) {
                 item.classList.remove('active');
             }
         });
 
-        // Alterna o item atual
         accordionItem.classList.toggle('active');
     });
 });
@@ -125,21 +104,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const emailField = form.querySelector("#email");
     const passwordField = form.querySelector("#password");
     const sexOptions = form.querySelectorAll('input[name="option"]');
-    const rememberMeCheckbox = form.querySelector("#remember-me");
+    const nomeField = form.querySelector("#name");
     const dropdownValueField = form.querySelector("#dropdown-value");
   
     // Função de validação
     function validateForm(event) {
       let isValid = true;
-
-      //validar nome
-      const nome = nomeField.value.trim();
-      if (nome.length < 3) {  // Verifica se o nome tem menos de 3 caracteres
-        alert("O nome tem que ter mais de 2 letras.");
-        isValid = false;
-      }      
   
-      // Validar email (deve ter um "@" e "." após o "@")
+      const nome = nomeField.value.trim();
+      if (nome.length < 3) {
+        alert("o nome tem que ter mais de 2 letras.");
+        isValid = false;
+      }
+
       const email = emailField.value.trim();
       const emailPattern = /^[^@]+@[^@]+\.[^@]+$/;
       if (!emailPattern.test(email)) {
@@ -147,39 +124,32 @@ document.addEventListener("DOMContentLoaded", () => {
         isValid = false;
       }
   
-      // Validar senha (não pode ser vazia)
       const password = passwordField.value.trim();
       if (password.length === 0) {
         alert("A senha é obrigatória.");
         isValid = false;
       }
   
-      // Validar seleção de sexo
       const sexSelected = Array.from(sexOptions).some(option => option.checked);
       if (!sexSelected) {
         alert("Por favor, selecione seu sexo.");
         isValid = false;
       }
   
-      // Validar o campo "Receber mensagens por"
       const dropdownValue = dropdownValueField.value.trim();
       if (!dropdownValue) {
         alert("Por favor, selecione uma forma de receber mensagens.");
         isValid = false;
       }
   
-      // Se o formulário for inválido, prevenir o envio
       if (!isValid) {
         event.preventDefault();
       } else {
         // Se for válido, redireciona para a home
-        window.location.href = "/index.html"; // Redireciona para a página home (ajuste a URL conforme necessário)
+        window.location.href = "/index.html"; 
       }
     }
   
     // Evento de envio do formulário
     form.addEventListener("submit", validateForm);
   });
-  
-  
-  

@@ -40,7 +40,7 @@
                         <button class="a1" onclick="toggleLog()">Entrar</button>
                     </div>
                     <div>
-                        <button class="a2" onclick="toggleSing()">Cadastrar</button>
+                        <button class="a2">Cadastrar</button>
                     </div>
                 </div>
                 <div class="menu">
@@ -56,7 +56,7 @@
                             <a href="#Preco">Preços</a>
                             <div>
                                 <a href="javascript:void(0);" onclick="toggleLog()">Entrar</a>
-                                <a style="color: #2563eb;"href="javascript:void(0);" onclick="toggleSing()">Cadastrar</a>
+                                <a style="color: #2563eb;"href="javascript:void(0);">Cadastrar</a>
                             </div>
                         </div>
                     </div>
@@ -425,9 +425,9 @@
                       <form class="login-form" id="login-form" action="/index.html" method="POST">
 
                         <div class="input-group">
-                            <label for="name" class="name">Nome:</label>
+                            <label for="name" class="name">Nome</label>
                             <input id="name" name="name" type="text" class="input">
-                        </div>
+                          </div>
 
                         <div class="input-group">
                           <label for="email" class="label">Email</label>
@@ -505,100 +505,6 @@
               
         </div>
     </div>
-
-    <div id="sing"  class="modal2">
-        <div class="log-content">
-            <div class="login-container">
-                <div class="form-container">
-                  <div class="form-card">
-                    <span class="close" width="100px" onclick="toggleSing()">&times;</span>
-                    <div class="logo-container">
-                        <img class="logo" src="./img/logo.png">
-                        <h2 class="title">Faça sua conta</h2>
-                      </div>
-                      <form class="login-form" id="login-form" action="/index.html" method="POST">
-
-                        <div class="input-group">
-                            <label for="name" class="name">Nome:</label>
-                            <input id="name" name="name" type="text" class="input">
-                        </div>
-                        
-                        <div class="input-group">
-                          <label for="email" class="label">Email</label>
-                          <input id="email" name="email" type="text" class="input">
-                        </div>
-                      
-                        <div class="input-group">
-                          <label for="password" class="label">Senha</label>
-                          <input id="password" name="password" type="password" class="input">
-                        </div>
-                        <div class="input-group">
-                            <label for="password" class="label">Confirme sua senha</label>
-                            <input id="password" name="password" type="password" class="input">
-                          </div>
-                      
-                        <div class="radio-group">
-                          <p>Selecione seu sexo</p>
-                          <label class="custom-radio">
-                            <input type="radio" name="option" value="opcao1">
-                            <span>Masculino</span>
-                          </label>
-                        
-                          <label class="custom-radio">
-                            <input type="radio" name="option" value="opcao2">
-                            <span>Feminino</span>
-                          </label>
-                        
-                          <label class="custom-radio">
-                            <input type="radio" name="option" value="opcao3">
-                            <span>Prefiro não dizer</span>
-                          </label>
-                        </div>
-                      
-                        <div class="remember-me">
-                          <input id="remember-me" name="remember-me" type="checkbox" class="checkbox">
-                          <label for="remember-me" class="checkbox-label">Relembrar</label>
-                          <a href="#" class="forgot-password">Esqueceu a senha?</a>
-                        </div>
-                      
-                        <div class="custom-select" id="custom-select">
-                          <div class="select-box" id="select-box">
-                            <span>Receber mensagens por:</span>
-                            <div class="arrow" id="arrow"></div>
-                          </div>
-                          <ul class="options-list" id="options-list">
-                            <li data-value="opcao1">WhatsApp</li>
-                            <li data-value="opcao2">E-mail</li>
-                            <li data-value="opcao3">Mensagens</li>
-                          </ul>
-                          <input type="hidden" name="dropdown-value" id="dropdown-value" value="">
-                        </div>
-                      
-                        <button type="submit" class="submit-button">Log in</button>
-                      </form>
-              
-                    <div class="divider">
-                      <span class="divider-text">Faça sua conta com:</span>
-                    </div>
-              
-                    <div class="social-login">
-                      <a href="#" class="social-button google">
-                        <img src="./img/google.png" width="25px"/>
-                        <span>Google</span>
-                      </a>
-              
-                      <a href="#" class="social-button github">
-                        <img src="./img/github.png" width="25px"/>
-                        <span>GitHub</span>
-                      </a>
-                    </div>
-
-                  </div>
-              
-                </div>
-              </div>
-              
-        </div>
    </div>
 
     <script src="./script.js"></script>
